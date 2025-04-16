@@ -1,0 +1,22 @@
+<div class="checkout-container">
+    <h2>إتمام التسجيل في الدورة</h2>
+    <div id="courseSummary"></div>
+    
+    <form id="paymentForm">
+        <div class="form-group">
+            <label for="cardNumber">رقم البطاقة:</label>
+            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+        </div>
+        
+        <button type="button" onclick="processPayment()">ادفع الآن</button>
+    </form>
+</div>
+
+<script>
+// دالة معالجة الدفع (ستتصل بخدمة Stripe أو PayPal لاحقاً)
+function processPayment() {
+    // هنا سيتم إرسال بيانات الدفع للخادم
+    alert('تمت عملية الدفع بنجاح!');
+    window.location.href = "../certificate/index.html";
+}
+</script>
