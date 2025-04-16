@@ -1,0 +1,23 @@
+<div class="certificate">
+    <div class="certificate-header">
+        <h1>شهادة إتمام الدورة</h1>
+    </div>
+    <div class="certificate-body">
+        <p>تمنح هذه الشهادة إلى:</p>
+        <h2 id="studentName">[اسم الطالب]</h2>
+        <p>لإتمامه دورة:</p>
+        <h3 id="courseTitle">[اسم الدورة]</h3>
+        <div class="certificate-id">رقم الشهادة: <span id="certificateId">CYB-2023-123456</span></div>
+        <div class="qr-code">
+            <img src="../assets/images/qr-placeholder.png" alt="QR Code">
+        </div>
+    </div>
+    <button onclick="downloadCertificate()">تحميل الشهادة (PDF)</button>
+</div>
+
+<script>
+function downloadCertificate() {
+    // هنا سيتم توليد PDF باستخدام مكتبة jsPDF
+    alert('جاري تحميل الشهادة...');
+}
+</script>
